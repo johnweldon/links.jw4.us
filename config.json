@@ -1,5 +1,14 @@
 {
-   "baseurl": "http://links.jw4.us/",
-   "languageCode": "en-us",
-   "title": "Links"
+ "baseurl": "http://links.jw4.us/",
+ "languageCode": "en-us",
+ "title": "Links",
+ "canonifyurls": true,
+  "permalinks": {
+    "blog": "/blog/:year/:month/:slug/"
+  },
+  "params": {
+    "author": "John Weldon",
+    "description": "Software Consultant; Expert in C#, ASP.NET MVC, Web Applications, Go, Golang.  I love people, and I love to build software solutions.",
+    "githubuser": "johnweldon"
+  }
 }
