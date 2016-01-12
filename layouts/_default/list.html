@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ .Title }}</title>
+    </head>
+    <body>
+        {{ partial "google_tags.html" . }}
+        <div class="wrapper">
+            {{ partial "topnav.html" . }}
+            <section role='main' class='scroll-container'>{{ range first 10 ( .Data.Pages.ByDate ) }}
+    {{ .Render "summary" }}
+    {{ end }}</section>
+        </div>
+        <div class="footer tab-bar">
+            <div class="row">
+                <p class="small-4 small-offset-8 columns">Copyright &copy; 2016</p>
+            </div>
+        </div>{{ partial "body_script_includes.html" . }}
+    </body>
+</html>
